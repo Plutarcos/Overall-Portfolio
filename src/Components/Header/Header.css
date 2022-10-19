@@ -1,6 +1,24 @@
 .MainHeader{
-    background-color: green;
-    position: relative;
-    width: 100%;
-    margin: 0px;
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#Dropdown{
+    color: yellow;
+}
+
+#Title{
+    color: green;
+    border: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#Social-Widgets img{
+    color: blue;
+    margin-left:  10px;
 }
