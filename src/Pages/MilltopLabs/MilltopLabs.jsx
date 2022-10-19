@@ -1,3 +1,4 @@
+import React from 'react';
 import './MilltopLabs.css';
 
 export default function MilltopLabs(){
