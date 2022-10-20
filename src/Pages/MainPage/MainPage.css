@@ -13,17 +13,20 @@
 .Texts  {
     animation: slidein .5s linear forwards;
     background-color: white;
+    border-radius: 30px;
 }
 
 @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
+    0% {
+        opacity: 0;
+        margin-left: 60%;
+        width: fit-content;
     }
 
-    to {
-        margin-left: 0%;
-        width: 100%;
+    100% {
+        opacity: 1;
+        margin-left: 30%;
+        width: fit-content;
     }
 }
 

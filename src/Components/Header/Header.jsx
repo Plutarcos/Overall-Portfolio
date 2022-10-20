@@ -10,9 +10,11 @@ export default function Header() {
             <div id="Dropdown">
                 <h1>Menu</h1>
                 <div class="Dropdown-content">
-                        <Link  to="/">Main Page</Link>
-                        <Link  to="/MilltopLabs">MilltopLabs</Link>
-                        <Link  to="/">Works</Link>
+
+                    <Link to="/">Main Page</Link>
+                    <Link to="/MilltopLabs">MilltopLabs</Link>
+                    <Link to="/">Works</Link>
+
                 </div>
             </div>
 
