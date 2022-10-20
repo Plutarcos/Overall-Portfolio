@@ -1,6 +1,6 @@
 import React from "react";
 import './Header.css';
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
 
@@ -10,11 +10,9 @@ export default function Header() {
             <div id="Dropdown">
                 <h1>Menu</h1>
                 <div class="Dropdown-content">
-                    <Router>
-                        <Link to="/">Main Page</Link>
-                        <Link to="/MilltopLabs">MilltopLabs</Link>
-                        <Link to="/">Pictures</Link>
-                    </Router>
+                        <Link  to="/">Main Page</Link>
+                        <Link  to="/MilltopLabs">MilltopLabs</Link>
+                        <Link  to="/">Works</Link>
                 </div>
             </div>
 

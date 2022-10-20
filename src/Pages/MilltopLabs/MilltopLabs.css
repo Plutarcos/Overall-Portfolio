@@ -1,8 +1,9 @@
-.Content{
-    background-color: white;
+.Milltop-Content{
+    background-color: rgb(172, 0, 120);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    width: 100%;
 
 }

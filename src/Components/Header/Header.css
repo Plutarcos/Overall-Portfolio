@@ -1,6 +1,7 @@
 .MainHeader{
     margin: 10px;
     position: relative;
+    width: 205vh;
     color: white;
     display: flex;
     flex-wrap: nowrap;
@@ -26,6 +27,7 @@
 }
 #Social-Widgets img:hover{
     transition: 500ms;
+    opacity: 0.3;
     box-shadow: 0px 8px 16px 0px green;
 }
 /* ----------------------------------------------- */
@@ -33,18 +35,32 @@
 
 /* DROPDOWN MENU */
 #Dropdown h1{
+    transition: 200ms;
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     border-radius: 10px;
     width: fit-content;
 }
+#Dropdown h1:hover{
+    transition: 200ms;
+    color: rgb(119, 119, 119);
+    background-color: #cecece;
+    border-radius: 10px;
+    width: fit-content;
+}
 
 #Dropdown {
+    
     display: inline-block;
+    
 }
 
 .Dropdown-content {
-    display: none;
+    /* transition: 1000ms; */
+    /* display: none; */
+    margin-left: -100%;
+    animation: hideDropdownMenu 1s;
+    animation-direction: alternate;
     position: absolute;
     background-color: aliceblue;
     min-width: 160px;
@@ -64,6 +80,32 @@
     color: rgb(122, 122, 122);
 }
 
-#Dropdown:hover .Dropdown-content{display: block;}
+#Dropdown:hover .Dropdown-content{
+    display: block;
+    animation: showDropdownMenu 0.5s;
+    margin-left: 0%;
 
-#Dropdown:hover h1{background-color: white;}
+
+}
+
+
+@keyframes showDropdownMenu{
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes hideDropdownMenu{
+    from {
+        margin-left: 0%;
+    }
+
+    to {
+        margin-left: -100%;
+        opacity: 0;
+    }
+}
