@@ -1,11 +1,48 @@
 .MilltopPage-Content{
-    background-color: rgb(172, 0, 120);
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    width: fit-content;
+    width: 100%;
     border-radius: 30px;
-    margin-left: 30%;
+    align-items: center;
+}
+.MilltopPage-Texts{
+    background-color: purple;
+    border-radius: 30px;
+    height: 400px;
+    width: 80%;
+    animation: slidein 1s;
+}
 
+.MilltopPage-Texts img{
+    width: 50%;
+}
+
+.MilltopPage-Texts img:hover{
+    animation: logoPulse 1s ease-in-out infinite;
+}
+
+@keyframes logoPulse{
+    0%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(105%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
+@keyframes slidein {
+    0% {
+        opacity: 0;
+        margin-left: 70%;
+    }
+
+    100% {
+        opacity: 1;
+        /* margin-left: 30%; */
+    }
 }
