@@ -14,7 +14,7 @@
     animation: slidein .5s linear forwards;
     background-color: white;
     border-radius: 30px;
-    height: 300px;
+    height: fit-content;
     width: 80%;
 }
 
