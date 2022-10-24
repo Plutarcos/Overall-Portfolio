@@ -10,6 +10,10 @@
     justify-content: space-between;
 }
 
+.MainHeader p{
+    color: #000;
+}
+
 #Title{
     color: rgb(0, 0, 0);
     border: 20px;
@@ -45,6 +49,9 @@
     border-radius: 10px;
     width: fit-content;
     cursor: default;
+}
+#Dropdown img{
+    animation: floatMenu 1s ease-in-out infinite;
 }
 #Dropdown h1:hover{
     transition: 200ms;
@@ -85,6 +92,9 @@
 .Dropdown-content a:hover{
     transition: 500ms;
     color: rgb(122, 122, 122);
+    animation: floatMenuLink 200ms ease-in-out;
+    transform: translatex(5px);
+
 }
 
 #Dropdown:hover .Dropdown-content{
@@ -126,5 +136,25 @@
     }
     to{
         opacity: 1;
+    }
+}
+
+@keyframes floatMenu {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(5px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes floatMenuLink {
+	0% {
+		transform: translatex(0px);
+	}
+	100% {
+		transform: translatex(5px);
     }
 }

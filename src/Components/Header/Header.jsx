@@ -8,7 +8,7 @@ export default function Header() {
         <div className="MainHeader">
 
             <div id="Dropdown">
-                <h1>Menu</h1>
+                <h1><img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" width='50px' alt="" /></h1>
                 <div class="Dropdown-content">
 
                     <Link to="/Overall-Portfolio">Main Page</Link>
@@ -18,7 +18,7 @@ export default function Header() {
                 </div>
             </div>
 
-
+            <p>You can try and find some of the hidden Easter Eggs in the pages</p>
 
             {/* //Social Network Links */}
             <div id="Social-Widgets">
