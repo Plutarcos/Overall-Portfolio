@@ -23,6 +23,9 @@
 
 
 /* Social Icons */
+#Social-Widgets{
+    margin-right: 2%;
+}
 #Social-Widgets img{
     animation: socialWidgetsInit 1s;
     height: 40px;

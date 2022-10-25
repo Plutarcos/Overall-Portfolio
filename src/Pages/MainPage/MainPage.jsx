@@ -13,7 +13,7 @@ export default function MainPage() {
         <div className="Content">
             <div className="Texts">
                 <h1>Welcome to my Portfolio Page</h1>
-                <p>Here you'll see some of my works, as well as my ReactJS Knowledge.</p>
+                <p>Here you'll see some of my works, and get to know me a little bit.</p>
             </div>
             <div className="mainPageTabs">
                 <Tabs defaultActiveKey="aboutMe" id="uncontrolled-tab-example" className="mb-3">

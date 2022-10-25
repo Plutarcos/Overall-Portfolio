@@ -5,25 +5,46 @@
 /* ABOUT ME PAGE */
 .aboutMePage {
     height: 350px;
-    overflow: auto;
     color: yellow;
+    position: relative;
+    perspective: 450px;
+    font-size: 2vw;
+    width: 1000px;
+    
+}
+.aboutMePage input{
+    position: fixed;
+    transform: translateX(-500px);
+    
+}
+.aboutMePage input:hover .aboutMeText{
+    /* animation: crawlText 100s linear forwards; */
+}
+.aboutMeText h1{
+    text-align: center;
     font-family: 'Starjedi';
 }
-
-.aboutMePage p {
-    text-align: left;
+.aboutMePage p{
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+.aboutMeText {
+    text-align: justify;
     padding-left: 5px;
+    animation: crawlText 100s linear forwards;
+    
 }
 
-.aboutMePage aside {
-    float: left;
-    padding-right: 10px;
+@keyframes crawlText{
+    0%{
+        top:0; transform: translateY(100px) translateZ(300px) rotateX(40deg);
+    }
+    97%{
+        top:-7500px; transform: translateY(-1500px) translateZ(-2500px) rotateX(70deg);
+    }
+    100%{
+        opacity: 0;
+    }
 }
-
-.mainPageTabsContent img {
-    box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
-}
-
 
 /* Skills Page */
 .skillIcons img{
