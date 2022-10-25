@@ -11,16 +11,20 @@
 
 .Texts  {
     animation: slidein .5s linear forwards;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 30px;
     height: fit-content;
     width: 80%;
     animation: float 3s ease-in-out infinite;
+    font-family: 'Starjedi';
+    color: black;
+    text-shadow: -1px -1px yellow, 1px -1px yellow, -1px 1px yellow, 1px 1px yellow;
+
 }
 
 .mainPageTabs{
     animation: slidein .5s linear forwards;
-    background-color: white;
+    /* background-color: white; */
     width: 800px;
     height: fit-content;
 }

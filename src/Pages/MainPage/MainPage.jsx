@@ -3,7 +3,9 @@ import './MainPage.css';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
+//Tabs
 import AboutMe from "./Tabs/AboutMe";
+import MySkills from "./Tabs/MySkills";
 
 export default function MainPage() {
 
@@ -19,7 +21,7 @@ export default function MainPage() {
                         <AboutMe/>
                     </Tab>
                     <Tab eventKey="mySkills" title="My Skills">
-                        <p>My Skills</p>
+                        <MySkills/>
                     </Tab>
                     <Tab eventKey="contact" title="Contact">
                         <p>Contact Info</p>

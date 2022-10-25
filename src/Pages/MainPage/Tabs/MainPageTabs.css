@@ -1,8 +1,16 @@
-.mainPageTabsContent {
-    background-color: white;
+#defaultCSS {
+    overflow: hidden;
 }
 
-.aboutMePage p{
+/* ABOUT ME PAGE */
+.aboutMePage {
+    height: 350px;
+    overflow: auto;
+    color: yellow;
+    font-family: 'Starjedi';
+}
+
+.aboutMePage p {
     text-align: left;
     padding-left: 5px;
 }
@@ -14,4 +22,18 @@
 
 .mainPageTabsContent img {
     box-shadow: 2px 2px 10px 2px rgb(0, 0, 0);
+}
+
+
+/* Skills Page */
+.skillIcons img{
+    transition: 500ms;
+    margin: 10px;
+    width: 80px;
+
+}
+.skillIcons img:hover{
+    transition: 250ms;
+    width: 70px;
+
 }
