@@ -17,7 +17,7 @@
 .aboutMePage h2 {
     position: fixed;
     z-index: 1;
-    cursor:wait;
+    cursor:default;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration:underline;
 }
@@ -25,7 +25,7 @@
 .aboutMePage h2:hover ~ .aboutMeText{
     transition: 1s;
     display: block;
-    animation: crawlText 200s linear forwards;
+    animation: crawlText 230s linear forwards;
 }
 .aboutMePage h2:hover ~ .crawlTitle{
     display: none;
