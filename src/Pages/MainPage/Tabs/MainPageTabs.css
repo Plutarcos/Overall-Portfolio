@@ -10,51 +10,106 @@
     perspective: 450px;
     font-size: 2vw;
     width: 1000px;
-    
+    margin: 5px;
+
 }
-.aboutMePage input{
+
+.aboutMePage h2 {
     position: fixed;
-    transform: translateX(-500px);
-    
+    z-index: 1;
+    cursor:wait;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration:underline;
 }
-.aboutMePage input:hover .aboutMeText{
-    /* animation: crawlText 100s linear forwards; */
+
+.aboutMePage h2:hover ~ .aboutMeText{
+    transition: 1s;
+    display: block;
+    animation: crawlText 200s linear forwards;
 }
-.aboutMeText h1{
+.aboutMePage h2:hover ~ .crawlTitle{
+    display: none;
+}
+
+.aboutMeText h1 {
     text-align: center;
     font-family: 'Starjedi';
 }
-.aboutMePage p{
+
+.aboutMePage p {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
+.crawlTitle{
+    font-family: 'Starjedi';
+    color: black;
+    text-shadow: -1px -1px yellow, 1px -1px yellow, -1px 1px yellow, 1px 1px yellow;
+    font-size: 150px;
+}
 .aboutMeText {
+    transition: 1s;
+    display: none;
+    z-index: -1;
     text-align: justify;
     padding-left: 5px;
-    animation: crawlText 100s linear forwards;
+    /* animation: crawlText 100s linear forwards; */
+
+}
+
+@keyframes crawlText {
+    0% {
+        top: 0;
+        transform: translateY(170px) translateZ(450px) rotateX(40deg);
+    }
+
+    97% {
+        top: -7500px;
+        transform: translateY(-2000px) translateZ(-2500px) rotateX(70deg);
+    }
+
+    100% {
+        opacity: 0;
+    }
     
 }
 
-@keyframes crawlText{
-    0%{
-        top:0; transform: translateY(100px) translateZ(300px) rotateX(40deg);
-    }
-    97%{
-        top:-7500px; transform: translateY(-1500px) translateZ(-2500px) rotateX(70deg);
-    }
-    100%{
-        opacity: 0;
-    }
-}
 
 /* Skills Page */
-.skillIcons img{
+.mySkillsPage{
+    width: 1000px;
+}
+.mySkillsPage img {
     transition: 500ms;
     margin: 10px;
     width: 80px;
 
 }
-.skillIcons img:hover{
+
+.skillIcons img:hover {
     transition: 250ms;
     width: 70px;
 
+}
+
+
+
+/* Mobile */
+@media (max-width: 1000px) {
+    .aboutMePage{
+        width: 900px;
+        height: 100%;
+    }
+    .aboutMePage h2{
+        display: none;
+    }
+    .aboutMeText{
+        display: block;
+    }
+    .skillIcons img{
+        width: 300px;
+    }
+    .skillIcons img:hover {
+        transition: 250ms;
+        width: 280px;
+    
+    }
 }

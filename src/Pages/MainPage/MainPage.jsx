@@ -16,12 +16,12 @@ export default function MainPage() {
                 <p>Here you'll see some of my works, and get to know me a little bit.</p>
             </div>
             <div className="mainPageTabs">
-                <Tabs defaultActiveKey="aboutMe" id="uncontrolled-tab-example" className="mb-3">
+                <Tabs defaultActiveKey="mySkills" className="uncontrolled-tab">
                     <Tab eventKey="aboutMe" title="About Me">
-                        <AboutMe/>
+                        <AboutMe />
                     </Tab>
                     <Tab eventKey="mySkills" title="My Skills">
-                        <MySkills/>
+                        <MySkills />
                     </Tab>
                     <Tab eventKey="contact" title="Contact">
                         <p>Contact Info</p>

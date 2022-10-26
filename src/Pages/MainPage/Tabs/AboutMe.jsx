@@ -2,17 +2,19 @@ import React from 'react';
 import './MainPageTabs.css';
 
 export default function AboutMe() {
+
     return (
         <div id='defaultCSS' className='mainPageTabsContent'>
             <div className='aboutMePage'>
-                <input type="button" value="Keep Mouse Here" />
+                <h2>PUT MOUSE HERE</h2>
+                <h1 className='crawlTitle'>who am i?</h1>
                 <div className='aboutMeText'>
-                    <h1>Who am i?</h1>
+                    <h1>Yuri de França!</h1>
 
                     <p>i am someone who can't stand in one place,
                         always trying to do as much as i can to create things and solve problems (as any nerdy kid does).</p>
 
-                    <p>Since i was a little kid, i've always loved to create things (slingshots, drawings, DiY toys, etc.)
+                    <p>Since i was a little kid, i've always loved to create things (slingshots, drawings, DIY toys, etc.)
                         and as a 2000's child, i grew up in front of a computer. At 8 years old i was testing all i could test
                         on Windows xp, that's when i found a Game Engine named 'FPS Creator'. Although simple, i was fascinated
                         with the thought that i could create more than just drawings and audio recordings of myself on my computer,
