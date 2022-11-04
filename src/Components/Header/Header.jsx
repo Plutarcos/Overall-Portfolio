@@ -11,9 +11,9 @@ export default function Header() {
                 <h1><img src="https://cdn-icons-png.flaticon.com/512/60/60995.png" width='50px' alt="" /></h1>
                 <div class="Dropdown-content">
 
-                    <Link to="/">Main Page</Link>
-                    <Link to="/MilltopLabs">MilltopLabs</Link>
-                    <Link to="/">Works</Link>
+                    <Link to="/Overall-Portfolio">Main Page</Link>
+                    <Link to="/Overall-Portfolio/MilltopLabs">MilltopLabs</Link>
+                    <Link to="/Overall-Portfolio">Works</Link>
 
                 </div>
             </div>
