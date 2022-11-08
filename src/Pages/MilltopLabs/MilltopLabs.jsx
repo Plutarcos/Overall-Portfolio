@@ -10,6 +10,8 @@ export default function MilltopLabs() {
             <div className='MilltopPage-Texts'>
                 <a href='https://www.instagram.com/milltoplabs/' target='blank'><img src={MilltopLogo} alt='MilltopLabs'></img></a>
                 <p>MilltopLabs is a Game Development and Virtual Reality company</p>
+
+
             </div>
 
         </div>

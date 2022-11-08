@@ -6,6 +6,7 @@ import Tabs from 'react-bootstrap/Tabs';
 //Tabs
 import AboutMe from "./Tabs/AboutMe";
 import MySkills from "./Tabs/MySkills";
+import Contact from "./Tabs/Contact";
 
 export default function MainPage() {
 
@@ -16,7 +17,7 @@ export default function MainPage() {
                 <p>Here you'll see some of my works, and get to know me a little bit.</p>
             </div>
             <div className="mainPageTabs">
-                <Tabs defaultActiveKey="mySkills" className="uncontrolled-tab">
+                <Tabs defaultActiveKey="contact" className="uncontrolled-tab">
                     <Tab eventKey="aboutMe" title="About Me">
                         <AboutMe />
                     </Tab>
@@ -24,7 +25,7 @@ export default function MainPage() {
                         <MySkills />
                     </Tab>
                     <Tab eventKey="contact" title="Contact">
-                        <p>Contact Info</p>
+                        <Contact/>
                     </Tab>
                 </Tabs>
             </div>
