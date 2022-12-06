@@ -13,7 +13,7 @@ export default function Header() {
 
                     <Link to="/Overall-Portfolio">Main Page</Link>
                     <Link to="/Overall-Portfolio/MilltopLabs">MilltopLabs</Link>
-                    <Link to="/Overall-Portfolio">Works</Link>
+                    <Link to="/Overall-Portfolio/GamePage">Game</Link>
 
                 </div>
             </div>
