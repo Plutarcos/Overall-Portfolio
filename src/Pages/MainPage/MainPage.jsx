@@ -24,7 +24,7 @@ export default function MainPage() {
                     <Tab eventKey="mySkills" title="My Skills">
                         <MySkills />
                     </Tab>
-                    <Tab eventKey="contact" title="Contact">
+                    <Tab eventKey="contact" title="My Game Leaderboard">
                         <Contact/>
                     </Tab>
                 </Tabs>
