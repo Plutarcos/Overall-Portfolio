@@ -5,7 +5,14 @@ export default function Contact() {
 
     return (
         <div id='defaultCSS' className='contactPage'>
-            <p>E-mail: yuridene50@gmail.com</p>
+            <style type="text/css">
+.dreamloLBTable { border-collapse:collapse;text-align:center;width: 200px; }
+.dreamloLBTable th { border-bottom: 1px solid #EEEEEE;font-weight:bold;margin:0;padding:4px; }
+.dreamloLBTable td { border-bottom: 1px solid#EEEEEE;margin:0;padding:4px; }
+</style>
+
+<script src="http://dreamlo.com/lb/61400d5b8f40bc6e9865d575/js" type="text/javascript"></script>
+
         </div>
     )
 
